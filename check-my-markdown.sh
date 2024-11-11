@@ -23,7 +23,7 @@ find "$1" -name \*.md -print0 | xargs -0 -n1 markdownlint
 echo ""
 echo "=== markdown-link-check ==="
 echo ""
-find "$1" -name \*.md -print0 | xargs -0 -n1 markdown-link-check
+find "$1" -name \*.md -print0 | xargs -0 -n1 markdown-link-check -q
 
 echo ""
 echo "=== spellchecker ==="
